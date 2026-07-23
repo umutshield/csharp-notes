@@ -2,7 +2,7 @@
 
 namespace Metotlar
 
-    // metotlar, dont repeat your self mantığıyla çalışır. yani bir kodu birden fazla kez/yerde yazmak yerine bir kez yazıp birden fazla yerde
+    // metotlar, dont repeat yourself mantığıyla çalışır. yani bir kodu birden fazla kez/yerde yazmak yerine bir kez yazıp birden fazla yerde
     // kullanılabilir hale getirir.
     
 {
