@@ -6,8 +6,7 @@ namespace Diziler
     {
         static void Main(string[] args)
         {
-            string[] kurslar = new string[] { "Yazılım geliştirme kampı", "Başlangıç temelleri kampı", 
-                "Java Kursu", "C# Geliştirme Kursu" };
+            string[] kurslar = new string[] { "Yazılım geliştirme kampı", "Başlangıç temelleri kampı", "Java Kursu", "C# Geliştirme Kursu" };
 
             for (int i = 0; i < kurslar.Length; i++)
             {
@@ -16,7 +15,7 @@ namespace Diziler
 
             // foreach döngüsü
 
-            foreach (string kurs in kurslar)     // buradaki kurs aliastır. yani takma addır. buraya x veya başka bir şeyde yazabilirsin
+            foreach (string kurs in kurslar)          // buradaki kurs aliastır. yani takma addır. buraya x veya başka bir şeyde yazabilirsin
             {
                 Console.WriteLine(kurs);
             }
