@@ -6,8 +6,7 @@ namespace ClassIntro
     {
         static void Main(string[] args)
         {
-            string adi = "Umut";
-            string soyadi = "Kalkan";
+            string adi = "umut";
             int yasi = 23;
 
             Kurs kurs1 = new Kurs();         //kurs1 değişkenimizin tipi Kurs'tur. Önceki örneklerde kurs1'in tipini string olarak tanımlamıştık.
