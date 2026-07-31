@@ -18,4 +18,4 @@ namespace Metotlar
             Console.WriteLine("Sepete eklendi : " + urunAdi);
         }
     }
-}
+} 
