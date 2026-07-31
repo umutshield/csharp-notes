@@ -73,5 +73,3 @@ where o.CustomerID is null
 --ikiden fazla tabloyu birleştirmek istersen bir join daha eklersin
 --inner join on inner join on gibi..
 
-
-
