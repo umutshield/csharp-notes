@@ -20,4 +20,4 @@ namespace Matematik
             Console.WriteLine("Sonuç: " + toplam);
         }
     }
-}
+} 
