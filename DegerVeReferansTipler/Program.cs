@@ -26,4 +26,4 @@
             //heap belleğinde ise eşitleme işlemi refernas(adres) numarası üzerinden gerçekleşir.
         }
     }
-}
+} 
