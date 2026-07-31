@@ -27,4 +27,4 @@
             //birinde tek bir kredi türü ile işlem yapılırken diğerinde birden fazla kredi türü ile işlem yapılmasıdır.
         }
     }
-}
+} 
