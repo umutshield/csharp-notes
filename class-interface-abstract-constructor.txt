@@ -1,0 +1,66 @@
+class ikiye ayrýlýr: varlýk ve operasyon classlarý. varlýk classlarý propertyleri yani özellikleri tutar,
+operasyon classlarý ise metotlarý tutar. metotlarý tutan classlar bu metotlarýn içeriðini tanýmlamak zorundadýr.
+
+class KrediManagear
+{
+	public void Hesapla()
+	{
+		"buraya belli operasyonlar yazýlýr"
+	}	
+}
+---------------------------------------------------------------------------------------------------------------------------
+
+interface'de ise metodun içeriði boþ býrakýlýr. interface'i implement eden her class kendi içeriðini kendi sayfasýnda kendisi tanýmlar.
+interface'teki mantýk þu: imza (void Hesapla()) her alt classta aynýdýr fakat içeriði hepsinde farklýdýr.
+interface'i kullanan class'lar bu interface ait metotlarý/þablonu kullanmak zorundadýr.
+interfacede sadece imza olur.
+
+interface IKrediManager
+{
+	void Hesapla();
+}
+
+class IhtiyacKredisi : IKrediManager
+{
+	public void Hesapla()
+	{
+		"hesapla iþlemi yapýldý"
+	}
+}
+---------------------------------------------------------------------------------------------------------------------------
+
+abstract classlar ise bir nevi bu ikisinin yani class ve interface'in birleþimidir. 
+abstract hem yarým hem de tamamlanmýþ operasyonlarý(imza) içerir (interfacede operasyon yarým býrakýldý, classta ise tamamlandý öyle düþün).
+aþaðýdaki kod çalýþtýrýldýðýnda Kaydet operasyonu tüm mevzuatlarda ortak çalýþýr fakat Degerlendir operasyonu her mevzuat için ayrý yazýlýr.
+!! abstract classlar newlenemez !! neden newlenemez? çünkü yarým operasyon( Degerlendir() ) var.
+
+abstract class MevzuatBase
+{
+	protected MevzuatBase()                //abstract class constructor içerir.
+	{
+		
+	}
+
+	public abstract void Degerlendir();
+	public void Kaydet()
+	{
+		cw("Kaydedildi");
+	}
+}
+
+class AMevzuat : MevzuatBase
+{
+	public override void Degerlendir()      //override yazmasýnýn nedeni Degerlendir operasyonunun içeriðinin her classta farklý olmasýdýr
+	{
+		"A mezuatý deðerlendirildi"
+	}
+}
+
+class BMevzuat : MevzuatBase
+{
+	public override void Degerlendir()
+	{
+		"A mezuatý deðerlendirildi"
+	}
+}
+---------------------------------------------------------------------------------------------------------------------------
