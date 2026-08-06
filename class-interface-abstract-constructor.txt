@@ -34,7 +34,7 @@ abstract hem yarým hem de tamamlanmýþ operasyonlarý(imza) içerir (interfacede op
 aþaðýdaki kod çalýþtýrýldýðýnda Kaydet operasyonu tüm mevzuatlarda ortak çalýþýr fakat Degerlendir operasyonu her mevzuat için ayrý yazýlýr.
 !! abstract classlar newlenemez !! neden newlenemez? çünkü yarým operasyon( Degerlendir() ) var.
 abstract class'ý newleyemezsin ama abstract class'ý implement eden(miras alan) classlarý newleyebilirsin.
- 
+
 abstract class MevzuatBase
 {
 	protected MevzuatBase()                //abstract class constructor içerir.
